@@ -1,0 +1,29 @@
+{
+  "name": "regeneratorify",
+  "version": "0.0.1",
+  "description": "browserify transform for the regenerator library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "generator",
+    "yield",
+    "coroutine",
+    "rewriting",
+    "transformation",
+    "syntax",
+    "codegen",
+    "rewriting",
+    "refactoring",
+    "transpiler",
+    "desugaring",
+    "ES6"
+  ],
+  "author": "Alberto Miorin <github@ululi.it>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "regenerator": "~0.2.5",
+    "through": "~2.3.4"
+  }
+}
