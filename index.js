@@ -4,7 +4,8 @@ var regenerator = require('regenerator');
 var through     = require('through');
 
 module.exports = function(file) {
-  var data = "var wrapGenerator = require('regeneratorify/runtime').wrapGenerator;\n\n";
+  var data = "";
+  var header = "var wrapGenerator = require('regeneratorify/runtime').wrapGenerator;\n";
   var stream = through(write, end);
 
   return stream;
@@ -14,7 +15,11 @@ module.exports = function(file) {
   }
 
   function end() {
-    stream.queue(regenerator(data));
+    var rdata = regenerator(data);
+    if (rdata !== data) {
+      rdata = header + rdata;
+    }
+    stream.queue(rdata);
     stream.queue(null);
   }
 }

@@ -1,10 +1,14 @@
 {
   "name": "regeneratorify",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "browserify transform for the regenerator library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/amiorin/regeneratorify"
   },
   "keywords": [
     "generator",
@@ -23,7 +27,7 @@
   "author": "Alberto Miorin <github@ululi.it>",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "regenerator": "~0.2.5",
+    "regenerator": "0.3.0",
     "through": "~2.3.4"
   }
 }
